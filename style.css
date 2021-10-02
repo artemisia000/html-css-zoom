@@ -14,6 +14,7 @@ body{
     flex-direction: column;
 }
 
+
 /*UTILITIES*/
 
 .bt-5{
@@ -24,12 +25,17 @@ body{
     border-radius: 2px;
     margin-right:5px;
     font-size: 13px;
+    cursor: pointer;
 }
 
-.icon{
-    padding: 3px;
+.bt{
+    color: #dcdcdc;
+    text-align: center;
 }
 
+.pd-5{
+    padding: 5px;
+}
 
 
 
@@ -72,12 +78,45 @@ main{
 }
 
 
-
-
-
 /*FOOTER*/
 
 footer{
-    background-color: darkblue;
-    height: 50px;
+    background-color:#222325 ;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.list-foot{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+
+.bt span{
+    display: block;
+    font-size: 13px;
+}
+
+.left div{
+    flex-direction: row;
+}
+
+.font{
+    font-size: 30px;
+    padding: 7px;
+    margin: 0 14px;
+}
+
+.right{
+    display: flex;
+    align-items: stretch;
+}
+
+.end{
+    background-color:#4b4c50 ;
+    color: #d25351;
+    font-size: 13px;
+    
 }
