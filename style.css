@@ -11,6 +11,7 @@
 body{
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 
@@ -56,17 +57,14 @@ header{
 
 /*MAIN*/
 
-.flex-container{
-    display: flex;
-}
 
 
 main{
+    display: flex;
     background-color:#000;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    overflow: auto;
-    justify-content: center;    
+    padding: 60px 150px;
+    justify-content: center; 
+    height: 100vh;   
 }
 
 
