@@ -14,6 +14,9 @@ body{
     height: 100vh;
 }
 
+/* 1rem --> 1volta e mezzo nel valore della font trovato nella root html */
+/* 1em --> torna indietro nel primo padre trovato con font-size impostata es. 16px impostato = 16px , 2em = 32px*/
+
 
 /*UTILITIES*/
 
@@ -30,9 +33,10 @@ body{
 
 .bt-img{
     color: #fff;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .6);
     border: currentColor;
-    font-size: 13px;
+    font-size: 14px;
+    padding: 4px;
 }
 
 .bt{
@@ -57,32 +61,39 @@ header{
 
 /*MAIN*/
 
-
-
 main{
     display: flex;
     background-color:#000;
-    padding: 60px 150px;
+    padding: 5px 80px;
     justify-content: center; 
-    height: 100vh;   
+    height: 100vh;
+    flex-grow: 1;  
+    overflow: auto; 
 }
 
 
 .picture{
-    margin: 5px;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap ;
 }
 
-.images img{
-    width: 220px;
-    height: 120px;
-    object-fit: cover; 
+.picture li {
+    width: calc(100% / 5);
+    padding: 5px;   
 }
+
 
 .images{
+    height: 150px;
     position: relative;
 }
 
+.images img{
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+}
 
 .name{
     position: absolute;
